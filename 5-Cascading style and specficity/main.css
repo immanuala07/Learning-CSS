@@ -10,3 +10,7 @@ h1 {
 .section-title {
 	color: #2ddf5c;
 }
+
+.section-title:hover {
+	color: #622ddf;
+}
