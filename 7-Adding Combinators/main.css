@@ -14,15 +14,18 @@ body {
 
 .section-title {
     color: #2ddf5c;
-    /* The below style will inherit font-family style from body tag */
-    /* font-family: inherit; */
 }
 
 .section-title:hover {
     color: #622ddf;
 }
 
-/* The body style doesnt inherit from the body tag since this style applied based on the specificity */
+/* Combinators - adding styles of two rules */
+#section-id h1 {
+    color: yellow;
+    font-family: 'Freckle Face', cursive;
+}
+
 h1 {
     color: white;
     font-family: 'Zen Dots';
