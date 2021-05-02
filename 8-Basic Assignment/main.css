@@ -1,0 +1,40 @@
+body {
+	font-family: sans-serif;
+}
+
+h1 {
+	color: rgb(64, 22, 218);
+	font-family: sans-serif;
+}
+
+.code-class {
+	color: rgb(21, 250, 0);
+}
+
+code {
+	/* font-family: monospace; */
+	font-family: inherit;
+	color:red;
+}
+/* 
+li:first-of-type {
+	background-color: white;
+	color: black;
+} */
+
+/* Same style as above */
+/* li:first-child {
+	background-color: white;
+	color: black;
+} */
+
+/* Comment anyone of the styles below to see the difference */
+li + li {
+    background: black;
+    color: white;
+}
+
+/* ol li {
+    background: black;
+    color: white;
+} */
