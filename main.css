@@ -1,0 +1,10 @@
+body {
+    font-family: 'Russo One', sans-serif;
+    margin-top: 3px;
+    margin-left: 30px;
+}
+
+nav a {
+    display: block;
+    padding-bottom: 5px;
+}
