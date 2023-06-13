@@ -22,18 +22,23 @@ body {
   border-color: black;
   border-style: solid;
   border-width: 5px;
-  margin: 20px;
+  /* margin: 20px; */
   /* Reducing the margin collapsing by using margin-bottom and margin-top */
-  /* margin-bottom: 0; */
+  margin-bottom: 0;
 }
 
 /* Reducing the margin collapsing by using margin-bottom and margin-top */
-/* #plans {
+#plans {
 	margin-top: 0;
-} */
+}
 
 /* The body style doesnt inherit from the body tag since this style applied based on the specificity */
 h1 {
+  /*
+  Reducing the margin collapsing by using margin-top
+  and overriding the browser defaults
+  */
+  margin-top: 0;
 	color:white;
 	font-family: 'Zen Dots';
 }
