@@ -15,17 +15,8 @@ body {
 #section-id {
   background: #ff1b68;
   padding: 20px;
-	border: 10px solid black;
-	margin: 20px;
-
 	/* CSS Height or Weight */
-	width: 50%;
-	height: 528px;
-}
-
-h1 {
-  color: white;
-  font-family: 'Zen Dots';
+	width: 100%;
 }
 
 .section-title {
@@ -42,4 +33,20 @@ h1 {
 #section-id h1 {
   color: yellow;
   font-family: 'Freckle Face', cursive;
+}
+
+/* h1 {
+    color: white;
+    font-family: 'Zen Dots';
+} */
+
+.main-header {
+	/* html header tag is block level element*/
+	width: 100%;
+	background: #2ddf5c;
+	padding: 8px 16px;
+}
+
+.main-nav__item {
+	display: inline-block;
 }
