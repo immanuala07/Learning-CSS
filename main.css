@@ -1,3 +1,9 @@
+* {
+	box-sizing: border-box;
+	/* Now the the content is rendered as per the width and height mentioned in al the elements
+	It overides the style of all the body elements and browser defaults  */
+}
+
 /* This style will only apply as per specificity and element style will override or doesnt apply on the element selectors */
 body {
   font-family: 'Roboto Mono', monospace;
