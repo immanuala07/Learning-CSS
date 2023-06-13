@@ -1,8 +1,12 @@
-section{
+#section-id {
 	background: #ff1b68;
 }
 
-h1{
+h1 {
 	color:white;
 	font-family: 'Zen Dots';
+}
+
+.section-title {
+	color: #2ddf5c;
 }
