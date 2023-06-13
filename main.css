@@ -1,41 +1,40 @@
-/* Instead of using the universal selector, */
-/* use body tag to apply/override style on the page. */
-/*
-
-* {
-  // Universal selector
-} 
-
-*/
-
-/* This style will only apply as per specificity and element style will override or doesnt apply on the element selectors */
 body {
-  font-family: 'Roboto Mono', monospace;
-  color: black;
+	font-family: sans-serif;
 }
 
-#section-id {
-	background: #ff1b68;
-}
-
-/* The body style doesnt inherit from the body tag since this style applied based on the specificity */
 h1 {
-	color:white;
-	font-family: 'Zen Dots';
+	color: rgb(64, 22, 218);
+	font-family: sans-serif;
 }
 
-.section-title {
-  color: #2ddf5c;
-  /* The below style will inherit font-family style from body tag */
-  /* font-family: inherit; */
+.code-class {
+	color: rgb(21, 250, 0);
 }
 
-.section-title:hover {
-	color: #622ddf;
+code {
+	/* font-family: monospace; */
+	font-family: inherit;
+	color:red;
+}
+/* 
+li:first-of-type {
+	background-color: white;
+	color: black;
+} */
+
+/* Same style as above */
+/* li:first-child {
+	background-color: white;
+	color: black;
+} */
+
+/* Comment anyone of the styles below to see the difference */
+li + li {
+    background: black;
+    color: white;
 }
 
-/* Combinators - adding styles of two rules */
-#section-id h1 {
-  color: yellow;
-  font-family: 'Freckle Face', cursive;
-}
+/* ol li {
+    background: black;
+    color: white;
+} */
