@@ -33,3 +33,9 @@ h1 {
 .section-title:hover {
 	color: #622ddf;
 }
+
+/* Combinators - adding styles of two rules */
+#section-id h1 {
+  color: yellow;
+  font-family: 'Freckle Face', cursive;
+}
