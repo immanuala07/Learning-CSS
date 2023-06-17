@@ -100,11 +100,7 @@ within the .main-nav__item class.
 }
 
 /* Pseudo-Classes */
-.main-nav__item a:hover {
-  color: white;
-}
-
-/* Pseudo-Classes */
+.main-nav__item a:hover,
 .main-nav__item a:active {
   color: white;
 }
