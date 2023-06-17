@@ -74,4 +74,27 @@ body {
 
 .main-nav__item {
 	display: inline-block;
+
+  /* 
+  Top and bottom margins do not affect inline elements
+  because inline elements flow with content on the page.
+  We can set left and right margins/padding on an inline element 
+  but not top or bottom because it would disrupt the flow of content.
+  */
+  margin: 0 16px;
+
+  /*
+  The below css wont take effect,
+  because the browser default styles for <a> tag will be applied first.
+  */
+  text-decoration: none;
+}
+
+/*
+The below css will override the browser default styles for <a> tag
+within the .main-nav__item class.
+*/
+.main-nav__item a {
+  text-decoration: none;
+  color: #0e4f1f;
 }
