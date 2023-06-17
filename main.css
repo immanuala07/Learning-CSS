@@ -45,6 +45,14 @@ body {
 /* Inlining both webpage link and navigation bar */
 .main-header > div {
 	display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header__brand {
+  text-decoration:none;
+  color:#105221;
+  font-weight: bold;
+  font-size:24px;
 }
 
 /* Since nav tag is block level elements so it is unable to inline with the .main-header > div */
@@ -52,9 +60,10 @@ body {
 .main-nav {
 	display: inline-block;
 	text-align: right;
-	width: calc(100% - 59px);
+	width: calc(100% - 85px);
 	/* The above calculation is make the webpage anchor inline with the navigation bar but it still takes the new line*/
 	/* This issue will be resolved in the next lesson */
+  vertical-align: middle;
 }
 
 .main-nav__items {
