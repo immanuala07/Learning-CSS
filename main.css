@@ -99,10 +99,26 @@ within the .main-nav__item class.
   color: #0e4f1f;
 }
 
+/* Pseudo-Classes */
 .main-nav__item a:hover {
   color: white;
 }
 
+/* Pseudo-Classes */
 .main-nav__item a:active {
   color: white;
+}
+
+/* Pseudo-Elements */
+#plans>p::before {
+  /* Content property is only available in ::after and ::before pseudo element */
+  content: "(::before - pseudo element) ";
+  color: red;
+}
+
+/* Pseudo-Elements */
+#plans>p::after {
+  /* Content property is only available in ::after and ::before pseudo element */
+  content: " (::after - pseudo element)";
+  color: red;
 }
