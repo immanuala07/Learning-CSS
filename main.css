@@ -12,11 +12,12 @@ body {
   margin: 0;
 }
 
-#section-id {
+#product-overview {
   background: #ff1b68;
-  padding: 20px;
+  padding: 10px;
 	/* CSS Height or Weight */
 	width: 100%;
+  height: 528px;
 }
 
 .section-title {
@@ -30,9 +31,9 @@ body {
 }
 
 /* Combinators - adding styles of two rules */
-#section-id h1 {
-  color: yellow;
-  font-family: 'Freckle Face', cursive;
+#product-overview h1 {
+  color: white;
+  font-family: 'Anton', sans-serif;
 }
 
 .main-header {
@@ -97,24 +98,13 @@ within the .main-nav__item class.
 .main-nav__item a {
   text-decoration: none;
   color: #0e4f1f;
+  font-weight: bold;
+  padding: 3px 0;
 }
 
 /* Pseudo-Classes */
 .main-nav__item a:hover,
 .main-nav__item a:active {
   color: white;
-}
-
-/* Pseudo-Elements */
-#plans>p::before {
-  /* Content property is only available in ::after and ::before pseudo element */
-  content: "(::before - pseudo element) ";
-  color: red;
-}
-
-/* Pseudo-Elements */
-#plans>p::after {
-  /* Content property is only available in ::after and ::before pseudo element */
-  content: " (::after - pseudo element)";
-  color: red;
+  border-bottom: 5px solid white;
 }
