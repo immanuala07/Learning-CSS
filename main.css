@@ -6,14 +6,14 @@
 
 /* This style will only apply as per specificity and element style will override or doesnt apply on the element selectors */
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Monterrat', sans-serif;
   color: black;
   /* Removes the extra margin from the browser deafault on the #sections-id */
   margin: 0;
 }
 
 #product-overview {
-  background: #ff1b68;
+  background: url("freedom.jpg");
   padding: 10px;
 	/* CSS Height or Weight */
 	width: 100%;
@@ -107,4 +107,28 @@ within the .main-nav__item class.
 .main-nav__item a:active {
   color: white;
   border-bottom: 5px solid white;
+}
+
+/*
+In CSS, order does matter
+they have the same specificity
+because they both have descendant combinator,
+*/
+.main-nav__item--cta a {
+  color: white;
+  background: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+/*
+In CSS, order does matter
+they have the same specificity
+because they both have descendant combinator,
+*/
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  color: #ff1b68;
+  background: white;
+  border: none;
 }
