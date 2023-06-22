@@ -1,54 +1,29 @@
-/* * {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
-} */
-
-.box {
-  border-top: 3px solid red;
-  border-right: 3px solid red;
-  border-bottom: 3px solid red;
-  border-left: 3px solid red;
-  
-  border: 3px solid red;
-
-  border-top-width: 3px;
-  border-top-style: solid;
-  border-top-color: red;
-
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-left: 40px;
-
-  margin-top: 10px;
-  margin-right: 20px;
-  margin-bottom: 30px;
-  margin-left: 40px;
-
-  margin: 10px 20px 30px 40px;
-
-  box-sizing: border-box;
-  height: 300px;
-  width: 48%;
-  margin: 0;
-  display: inline-block;
+    font-family: sans-serif;
 }
 
-/* Give the first box a height of 100% of the window height. */
-html,
-body {
-  height: 100%;
-  /* box-sizing: border-box; */
+nav {
+    margin-bottom: 16px;
+    background: #fa923f;
+    padding: 8px 0;
 }
 
-#first-box {
-  display: none;
-  /* visibility: hidden; */
+a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
 }
 
-div:last-of-type:hover {
-  border-color: greenyellow;
+a.active {
+  color: #521751;
+}
+
+.main-section {
+    height: 800px;
+    border: 1px solid #ccc;
+    padding: 16px;
+}
+
+.highlighted {
+  border:2px solid #fa923f;
 }
