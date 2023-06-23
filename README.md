@@ -28,3 +28,7 @@ Navigate to below branches to understand about CSS:
 </details>
 
 #### Useful links:
+
+- [CSS: Cascading Style Sheets](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+- [Can I Use](https://caniuse.com/)
