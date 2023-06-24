@@ -24,6 +24,7 @@ body {
   color: #2ddf5c;
   /* The below style will inherit font-family style from body tag */
   /* font-family: inherit; */
+  text-align: center;
 }
 
 .section-title:hover {
@@ -36,6 +37,15 @@ body {
   font-family: 'Anton', sans-serif;
 }
 
+.plan {
+  background: #d5ffdc;
+  text-align: center;
+  width: 30%;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px;
+  vertical-align: middle;
+}
 .main-header {
   /* html header tag is block level element*/
   width: 100%;
