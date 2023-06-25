@@ -126,6 +126,17 @@ the css style is targeted at the nested element.
   outline: none;
 }
 
+#key-features {
+  background: #ff1b68;
+  padding: 16px;
+  margin-top: 80px;
+}
+
+#key-features .section-title {
+  color: white;
+  margin: 32px;
+}
+
 .main-header {
   /* html header tag is block level element*/
   width: 100%;
