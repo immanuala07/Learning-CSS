@@ -141,6 +141,35 @@ the css style is targeted at the nested element.
   margin: 32px;
 }
 
+.key-features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.key-feature {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+.key-feature__image {
+  background: #ffcede;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.key-feature__description {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
 .main-header {
   /* html header tag is block level element*/
   width: 100%;
