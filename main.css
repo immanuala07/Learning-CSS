@@ -122,6 +122,10 @@ the css style is targeted at the nested element.
   color: #0e4f1f;
 }
 
+.button:focus {
+  outline: none;
+}
+
 .main-header {
   /* html header tag is block level element*/
   width: 100%;
