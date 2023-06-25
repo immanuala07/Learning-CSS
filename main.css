@@ -132,6 +132,10 @@ the css style is targeted at the nested element.
   margin-top: 80px;
 }
 
+/*
+When there is a space between two css class,
+the css style is targeted at the nested element.
+*/
 #key-features .section-title {
   color: white;
   margin: 32px;
