@@ -34,12 +34,32 @@ main {
   background: white;
 }
 
+.clearfix {
+  /*
+  The clear css property controls the flow next to floated elements.
+  The clear property specifies what should happen with the element that is next to a floating element.
+  */
+  clear: both;
+}
+
 #plus {
   background: rgba(213, 255, 220, 0.95);
 }
 
 #free {
   background: rgba(234, 252, 237, 0.95);
+
+  /*
+  The float property specifies whether an element should float to the left, right, or not at all.
+  Note: Absolutely positioned elements ignore the float property.
+  Note: Elements next to a floating element will flow around it.
+        To avoid this, use the clear property or the clearfix hack.
+  */
+  float: right;
+
+  border-right: none;
+  border-left: 4px solid #0e4f1f;
+  text-align: right;
 }
 
 #premium {
