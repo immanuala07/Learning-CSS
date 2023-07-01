@@ -47,10 +47,9 @@ body {
   background: #2ddf5c;
   padding: 8px 16px;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
-  z-index: 11;
 }
 
 /* Inlining both webpage link and navigation bar */

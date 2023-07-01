@@ -33,7 +33,7 @@ All done, great job!
   /* CSS Height or Weight */
   width: 100%;
   height: 528px;
-  margin-top: 44px;
+  margin-top: 43px;
   position: relative;
 }
 
@@ -53,13 +53,8 @@ All done, great job!
   color: white;
   font-family: 'Anton', sans-serif;
   position: absolute;
-  /*
-  bottom: 70px;
-  left: 35px;
-  */
-
-  bottom: 10%;
-  left: 5%;
+  bottom: 5%;
+  left: 3%;
 }
 
 .plan__list {
