@@ -28,7 +28,10 @@ All done, great job!
 */
 
 #product-overview {
-  background: url("freedom.jpg");
+  /* background: url("freedom.jpg"); */
+  background-image: url("freedom.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 10px;
   /* CSS Height or Weight */
   width: 100%;
