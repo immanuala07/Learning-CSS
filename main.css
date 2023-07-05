@@ -32,6 +32,7 @@ All done, great job!
   background-image: url("freedom.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: left 10% bottom 20%;
   padding: 10px;
   /* CSS Height or Weight */
   width: 100%;
