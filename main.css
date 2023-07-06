@@ -33,6 +33,9 @@ All done, great job!
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left 10% bottom 20%;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-clip: border-box;
   padding: 10px;
   /* CSS Height or Weight */
   width: 100%;
