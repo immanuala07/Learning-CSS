@@ -28,7 +28,7 @@ All done, great job!
 */
 
 #product-overview {
-  background: url("freedom.jpg") left 10% bottom 20%/cover no-repeat border-box;
+  background: url("./images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box;
   /* or */
   /* background: url("freedom.jpg") left 10% bottom 20%/cover no-repeat border-box border-box; */
 

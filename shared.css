@@ -63,6 +63,19 @@ body {
   color: #105221;
   font-weight: bold;
   font-size: 24px;
+
+  height: 22px;
+  
+  /* 
+  Using display: inline-block; allows the element to flow 
+  with the surrounding content horizontally like an inline element,
+  but it also allows you to set a width and height like a block element.
+  */
+  display: inline-block;
+}
+
+.main-header__brand img {
+  height: 100%;
 }
 
 /* Since nav tag is block level elements so it is unable to inline with the .main-header > div */
