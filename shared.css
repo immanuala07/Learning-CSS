@@ -1,217 +1,143 @@
-/* 
-Follow the instructions and try to implement a solution on your own.
-
-The instructions are:
-1) Go to our landing page in the course project and add a “margin-top” to our image (“#product-overview”) to ensure,
-that both the image and the slogan („Get the freedom you deserve“) are no longer hidden below the navigation bar.
-
-2) Find a way to position the slogan in the left lower corner of the image using “px”.
-The slogan should have some space to the left and to the bottom but do NOT add a margin to it.
-
-3) Change the positioning context of the slogan
-(challenge: What was the positioning context so far? What is the new positioning context?).
-Remember how we created the badge on the “Packages” page…
-
-4) Adjust the position of the slogan using “%” values.
-
-5) Switch to the “Packages” page.
-
-6) Add a “z-index” of 10 to the badge (“.package__badge”).
-Scroll down on the webpage, what happens to the badge and what causes this issue?
-
-7) Fix the issue encountered using the “z-index”.
-Make sure that the highest “z-index” on the entire page is the “z-index” of the badge
-(hint: Maybe the Stacking Context is a helpful concept in this situation,
-so you might have to add the “position” property again).
-
-All done, great job!
-*/
-
 * {
-  box-sizing: border-box;
-  /* Now the the content is rendered as per the width and height mentioned in al the elements
-	It overides the style of all the body elements and browser defaults  */
+    box-sizing: border-box;
 }
 
-/* This style will only apply as per specificity and element style will override or doesnt apply on the element selectors */
 body {
-  font-family: 'Monterrat', sans-serif;
-  color: black;
-  /* Removes the extra margin from the browser deafault on the #sections-id */
-  margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 .backdrop {
-  position: fixed;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
-
-  display: none;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
 }
 
 .main-header {
-  /* html header tag is block level element*/
-  width: 100%;
-  background: #2ddf5c;
-  padding: 8px 16px;
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #2ddf5c;
+    padding: 0.5rem 1rem;
+    z-index: 2;
 }
 
-/* Inlining both webpage link and navigation bar */
-.main-header>div {
-  display: inline-block;
-  vertical-align: middle;
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .main-header__brand {
-  text-decoration: none;
-  color: #105221;
-  font-weight: bold;
-  font-size: 24px;
-
-  height: 22px;
-  
-  /* 
-  Using display: inline-block; allows the element to flow 
-  with the surrounding content horizontally like an inline element,
-  but it also allows you to set a width and height like a block element.
-  */
-  display: inline-block;
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 1.5rem;
+    /* width: 20px; */
+    display: inline-block;
 }
 
 .main-header__brand img {
-  height: 100%;
+    height: 100%;
+    /* width: 100%; */
 }
 
-/* Since nav tag is block level elements so it is unable to inline with the .main-header > div */
-/* In the below styling we are inlining the nav tag with div tag */
 .main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 85px);
-  /* The above calculation is make the webpage anchor inline with the navigation bar but it still takes the new line*/
-  /* This issue will be resolved in the next lesson */
-  vertical-align: middle;
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 74px);
+    vertical-align: middle;
 }
 
 .main-nav__items {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .main-nav__item {
-  display: inline-block;
-
-  /* 
-  Top and bottom margins do not affect inline elements
-  because inline elements flow with content on the page.
-  We can set left and right margins/padding on an inline element 
-  but not top or bottom because it would disrupt the flow of content.
-  */
-  margin: 0 16px;
-
-  /*
-  The below css wont take effect,
-  because the browser default styles for <a> tag will be applied first.
-  */
-  text-decoration: none;
+    display: inline-block;
+    margin: 0 1rem;
 }
 
-/*
-The below css will override the browser default styles for <a> tag
-within the .main-nav__item class.
-*/
 .main-nav__item a {
-  text-decoration: none;
-  color: #0e4f1f;
-  font-weight: bold;
-  padding: 3px 0;
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 0.2rem 0;
 }
 
-/* Pseudo-Classes */
 .main-nav__item a:hover,
 .main-nav__item a:active {
-  color: white;
-  border-bottom: 5px solid white;
+    color: white;
+    border-bottom: 5px solid white;
 }
 
-/*
-In CSS, order does matter
-they have the same specificity
-because they both have descendant combinator,
-*/
 .main-nav__item--cta a {
-  color: white;
-  background: #ff1b68;
-  padding: 8px 16px;
-  border-radius: 8px;
+    color: white;
+    background: #ff1b68;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
 }
 
-/*
-In CSS, order does matter
-they have the same specificity
-because they both have descendant combinator,
-*/
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active {
-  color: #ff1b68;
-  background: white;
-  border: none;
+    color: #ff1b68;
+    background: white;
+    border: none;
 }
 
 .main-footer {
-  background: black;
-  padding: 32px;
-  margin-top: 48px;
+    background: black;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 .main-footer__links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .main-footer__link {
-  display: inline-block;
-  margin: 0 16px;
+    display: inline-block;
+    margin: 0 1rem;
 }
 
 .main-footer__link a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 .main-footer__link a:hover,
 .main-footer__link a:active {
-  color: #ccc;
+    color: #ccc;
 }
 
 .button {
-  background: #0e4f1f;
-  color: white;
-  font: inherit;
-  border: 1.5px solid #0e4f1f;
-  padding: 8px;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
+    background: #0e4f1f;
+    color: white;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .button:hover,
 .button:active {
-  background: white;
-  color: #0e4f1f;
+    background: white;
+    color: #0e4f1f;
 }
 
 .button:focus {
-  outline: none;
+    outline: none;
 }

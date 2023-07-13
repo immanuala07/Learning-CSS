@@ -1,75 +1,30 @@
-/* 
-Follow the instructions and try to implement a solution on your own.
-
-The instructions are:
-1) Go to our landing page in the course project and add a “margin-top” to our image (“#product-overview”) to ensure,
-that both the image and the slogan („Get the freedom you deserve“) are no longer hidden below the navigation bar.
-
-2) Find a way to position the slogan in the left lower corner of the image using “px”.
-The slogan should have some space to the left and to the bottom but do NOT add a margin to it.
-
-3) Change the positioning context of the slogan
-(challenge: What was the positioning context so far? What is the new positioning context?).
-Remember how we created the badge on the “Packages” page…
-
-4) Adjust the position of the slogan using “%” values.
-
-5) Switch to the “Packages” page.
-
-6) Add a “z-index” of 10 to the badge (“.package__badge”).
-Scroll down on the webpage, what happens to the badge and what causes this issue?
-
-7) Fix the issue encountered using the “z-index”.
-Make sure that the highest “z-index” on the entire page is the “z-index” of the badge
-(hint: Maybe the Stacking Context is a helpful concept in this situation,
-so you might have to add the “position” property again).
-
-All done, great job!
-*/
-
 #product-overview {
-  background: linear-gradient(to top, rgba(80, 68, 18, 0.6)10%, transparent), url("./images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box, #ff1b68;
-  /* or */
-  /* background: url("freedom.jpg") left 10% bottom 20%/cover no-repeat border-box border-box; */
-
-  /*
-  background-image: url("freedom.jpg");
-  background-position: left 10% bottom 20%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-origin: border-box;
-  background-clip: border-box;
-  */
-  
-  /*
-  background-image: linear-gradient(180deg, red 70%, blue 60%, rgba(0, 0, 0, 0.5));
-  
-  background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue 70%, green);
-  */
-
-  padding: 10px;
-  /* CSS Height or Weight */
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box,
+    #ff1b68;
+  /* background-image: url("freedom.jpg");
+    background-size: cover;
+    background-position: left 10% bottom 20%; */
+  /* background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box; */
+  /* background-image: linear-gradient(180deg, red 70%, blue 60%, rgba(0,0,0,0.5)); */
+  /* background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue 70%, green); */
   width: 100%;
   height: 528px;
-  margin-top: 43px;
+  margin-top: 2.75rem;
+  /* border: 5px dashed red; */
   position: relative;
 }
 
 .section-title {
   color: #2ddf5c;
-  /* The below style will inherit font-family style from body tag */
-  /* font-family: inherit; */
   text-align: center;
 }
 
-.section-title:hover {
-  color: #622ddf;
-}
-
-/* Combinators - adding styles of two rules */
 #product-overview h1 {
   color: white;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   position: absolute;
   bottom: 5%;
   left: 3%;
@@ -84,10 +39,10 @@ All done, great job!
 .plan {
   background: #d5ffdc;
   text-align: center;
-  width: 30%;
+  padding: 1rem;
+  margin: 0.5rem;
   display: inline-block;
-  padding: 16px;
-  margin: 8px;
+  width: 30%;
   vertical-align: middle;
 }
 
@@ -98,12 +53,11 @@ All done, great job!
 }
 
 .plan__annotation {
+  background: white;
   color: #19b84c;
-  background-color: white;
-  padding: 8px;
-  margin: 5px;
-  border-radius: 8px;
+  padding: 0.5rem;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
 }
 
 .plan__title {
@@ -114,26 +68,10 @@ All done, great job!
   color: #858585;
 }
 
-/*
-When there is a space between two css class,
-the css style is targeted at the nested element.
-
-<article class="plan plan--highlighted">
-  <h1 class="plan__title">PLUS</h1>
-</article>
-*/
 .plan--highlighted .plan__title {
   color: white;
 }
 
-/*
-When there is a space between two css class,
-the css style is targeted at the nested element.
-
-<article class="plan plan--highlighted">
-  <h1 class="plan__price">$29/month</h1>
-</article>
-*/
 .plan--highlighted .plan__price {
   color: #0e4f1f;
 }
@@ -145,26 +83,21 @@ the css style is targeted at the nested element.
 }
 
 .plan__feature {
-  /* Since margin is collapasing here so we using margin instead of padding */
-  margin: 8px 0;
+  margin: 0.5rem 0;
 }
 
 #key-features {
   background: #ff1b68;
-  padding: 16px;
-  margin-top: 80px;
+  margin-top: 5rem;
+  padding: 1rem;
 }
 
-/*
-When there is a space between two css class,
-the css style is targeted at the nested element.
-*/
 #key-features .section-title {
   color: white;
-  margin: 32px;
+  margin: 2rem;
 }
 
-.key-features__list {
+.key-feature__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -184,12 +117,16 @@ the css style is targeted at the nested element.
   border: 2px solid #424242;
   border-radius: 50%;
   margin: auto;
-  padding: 20px;
+  padding: 1.5rem;
 }
 
 .key-feature__description {
   text-align: center;
   font-weight: bold;
   color: white;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
+
+/* h1 {
+    font-family: sans-serif;
+} */
