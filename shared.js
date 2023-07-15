@@ -1,2 +1,12 @@
 var backdrop = document.querySelector('.backdrop');
-backdrop.style.display = "block";
+var modal = document.querySelector('.modal');
+var selectPlanButtons = document.querySelectorAll('.plan button');
+
+// console.dir(backdrop);
+
+for (let i = 0; i < selectPlanButtons.length; i++) {
+  selectPlanButtons[i].addEventListener("click", function () {
+    backdrop.style.display = "block";
+    modal.style.display = "block";
+  });
+}
