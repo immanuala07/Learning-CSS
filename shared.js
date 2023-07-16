@@ -24,8 +24,11 @@ function closeModal () {
   // backdrop.style.display = "none";
   // modal.style.display = "none";
 
+  if (modal) {
+    modal.classList.remove('open');
+  }
+
   backdrop.classList.remove('open');
-  modal.classList.remove('open');
 }
 
 backdrop.addEventListener('click', function() {
@@ -35,7 +38,10 @@ backdrop.addEventListener('click', function() {
   closeModal();
 });
 
-modalNoButton.addEventListener('click', closeModal);
+if (modalNoButton) {
+  // Since the below code is always executed so we wrap the code in IF condition.
+  modalNoButton.addEventListener('click', closeModal);
+}
 
 toggleButton.addEventListener('click', function() {
   // mobileNav.style.display = "block";
