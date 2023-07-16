@@ -9,24 +9,38 @@ var mobileNav = document.querySelector('.mobile-nav');
 
 for (let i = 0; i < selectPlanButtons.length; i++) {
   selectPlanButtons[i].addEventListener("click", function () {
-    backdrop.style.display = "block";
-    modal.style.display = "block";
+    // backdrop.style.display = "block";
+    // modal.style.display = "block";
+
+    // modal.className = 'open'; // This will actually overwrites the complete class list.
+
+    // Adds open css class to the modal element
+    modal.classList.add('open');
+    backdrop.classList.add('open');
   });
 }
 
 function closeModal () {
-  backdrop.style.display = "none";
-  modal.style.display = "none";
+  // backdrop.style.display = "none";
+  // modal.style.display = "none";
+
+  backdrop.classList.remove('open');
+  modal.classList.remove('open');
 }
 
 backdrop.addEventListener('click', function() {
-  mobileNav.style.display = "none";
+  // mobileNav.style.display = "none";
+
+  mobileNav.classList.remove('open');
   closeModal();
 });
 
 modalNoButton.addEventListener('click', closeModal);
 
 toggleButton.addEventListener('click', function() {
-  mobileNav.style.display = "block";
-  backdrop.style.display = "block";
+  // mobileNav.style.display = "block";
+  // backdrop.style.display = "block";
+
+  mobileNav.classList.add('open');
+  backdrop.classList.add('open');
 });
