@@ -10,7 +10,7 @@
     background-clip: border-box; */
   /* background-image: linear-gradient(180deg, red 70%, blue 60%, rgba(0,0,0,0.5)); */
   /* background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue 70%, green); */
-  
+
   /*
   In case you don't want to display these scrollbars, you can use one of these solutions:
     - Use width: 100% instead of vw: 100
@@ -27,17 +27,29 @@
   position: relative;
 }
 
-.section-title {
-  color: #2ddf5c;
-  text-align: center;
-}
-
 #product-overview h1 {
   color: white;
   font-family: "Anton", sans-serif;
   position: absolute;
   bottom: 5%;
   left: 3%;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 40rem) {
+  #product-overview {
+    height: 40vh;
+    background-position: 50% 25%;
+  }
+
+  #product-overview h1 {
+    font-size: 3rem;
+  }
+}
+
+.section-title {
+  color: #2ddf5c;
+  text-align: center;
 }
 
 .plan__list {
