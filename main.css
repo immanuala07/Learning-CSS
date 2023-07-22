@@ -36,6 +36,10 @@
   font-size: 1.6rem;
 }
 
+/*
+Media queries should be placed in increasing order,
+since the CSS execution is top to bottom approach.
+*/
 @media (min-width: 40rem) {
   #product-overview {
     height: 40vh;
@@ -44,6 +48,21 @@
 
   #product-overview h1 {
     font-size: 3rem;
+  }
+}
+
+/*
+Media queries should be placed in increasing order,
+since the CSS execution is top to bottom approach.
+*/
+@media (min-width: 60rem) {
+  #product-overview {
+    height: 50vh;
+    background-position: 50% 25%;
+  }
+
+  #product-overview h1 {
+    font-size: 5rem;
   }
 }
 
