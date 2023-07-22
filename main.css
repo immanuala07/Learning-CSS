@@ -163,9 +163,7 @@ since the CSS execution is top to bottom approach.
 }
 
 .key-feature {
-	display: inline-block;
-	width: 30%;
-	vertical-align: top;
+	display: block;
 }
 
 .key-feature__image {
@@ -183,6 +181,14 @@ since the CSS execution is top to bottom approach.
 	font-weight: bold;
 	color: white;
 	font-size: 1.2rem;
+}
+
+@media (min-width: 40rem) {
+	.key-feature {
+		display: inline-block;
+		width: 30%;
+		vertical-align: top;
+	}
 }
 
 /* h1 {
