@@ -6,6 +6,8 @@
 	"editor.tabSize": 2,
 	"editor.formatOnSaveMode": "file",
 	"[css]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	}
+		"editor.defaultFormatter": "vscode.css-language-features"
+	},
+	"editor.formatOnPaste": true,
+	"editor.formatOnType": true
 }
