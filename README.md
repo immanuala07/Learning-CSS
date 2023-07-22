@@ -32,3 +32,5 @@ Navigate to below branches to understand about CSS:
 - [CSS: Cascading Style Sheets](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 - [Can I Use](https://caniuse.com/)
+- [mydevice.io](https://www.mydevice.io/)
+- [Viewport Size for Devices](https://yesviz.com/viewport/)
