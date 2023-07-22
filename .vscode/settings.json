@@ -1,7 +1,11 @@
 {
 	"livePreview.defaultPreviewPath": "/index.html",
+	"liveServer.settings.fullReload": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnSave": true,
 	"editor.tabSize": 2,
-	"editor.formatOnSaveMode": "file"
+	"editor.formatOnSaveMode": "file",
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
