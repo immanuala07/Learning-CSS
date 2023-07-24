@@ -233,6 +233,17 @@ main {
     outline: none;
 }
 
+/* 
+Targets the button with disabled attribute,
+so add disabled attribut to the button to see the changes.
+*/
+.button[disabled] {
+    cursor: not-allowed;
+    border: #a1a1a1;
+    background: #ccc;
+    color: #a1a1a1;
+}
+
 .open {
     display: block !important;
 }
