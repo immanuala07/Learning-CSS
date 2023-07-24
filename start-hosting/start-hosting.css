@@ -62,6 +62,7 @@ main {
   width: 1rem;
   height: 1rem;
 
+  /* https://stackoverflow.com/questions/1895476/how-do-i-style-a-select-dropdown-with-only-css */
   /* Overwrites and disables the browser defaults for appearance */
   -webkit-appearance: none;
   /* Overwrites and disables the browser defaults for appearance on Mozilla */
