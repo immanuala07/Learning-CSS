@@ -30,6 +30,7 @@ main {
 .signup-form input[id*="terms"]+label {
   display: inline-block;
   width: auto;
+  vertical-align: bottom;
 }
 
 .signup-form input:not([type="checkbox"]),
@@ -73,6 +74,15 @@ main {
 .signup-form input[type="checkbox"]:checked {
   background: #2ddf5c;
   border: #0e4f1f;
+}
+
+/* :invalid (pseudo-class selector) - https://developer.mozilla.org/en-US/docs/Web/CSS/:invalid */
+/* :valid (pseudo-class selector) - https://developer.mozilla.org/en-US/docs/Web/CSS/:valid */
+.signup-form input.invalid,
+.signup-form select.invalid,
+.signup-form :invalid {
+  border-color: red !important;
+  background: #faacac;
 }
 
 .signup-form button[type="submit"] {
