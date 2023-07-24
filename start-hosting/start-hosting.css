@@ -32,6 +32,24 @@ main {
   width: auto;
 }
 
+.signup-form input,
+.signup-form select {
+  border: 1px solid #ccc;
+  padding: 0.2rem 0.5rem;
+  /* Inherit makes the default font of website to be used. */
+  font: inherit;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  /* Disables the browser default outline when input or select is focused. */
+  outline: none;
+  /* Enables the background color, when the input and select is focused. */
+  background: #d8f3df;
+  /* Disables the browser default outline when input or select is focused. */
+  border-color: #2ddf5d;
+}
+
 .signup-form button[type="submit"] {
   display: block;
   margin-top: 1rem;
