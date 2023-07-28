@@ -27,6 +27,17 @@ so you might have to add the “position” property again).
 All done, great job!
 */
 
+@font-face {
+  font-family: "AnonymousPro";
+  src: url("anonymousPro-Regular.ttf");
+}
+
+@font-face {
+  font-family: "AnonymousPro";
+  src: url("anonymousPro-Bold.ttf");
+  font-weight: 700;
+}
+
 main {
   padding-top: 2rem;
 }
@@ -86,9 +97,8 @@ main {
   font-size: 1.2rem;
   color: #0e4f1f;
   background: white;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  font-style: italic;
+  font-family: 'AnonymousPro', 'sans-serif';
+  font-weight: 700;
 }
 
 .clearfix {
