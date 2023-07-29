@@ -45,7 +45,7 @@ main {
 
 .testimonial__subtitle {
   margin: 0;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   /* font-size: 1.1em; */
   color: #ccc;
 }
@@ -62,6 +62,8 @@ main {
 
 .testimonial__text {
   margin: 0.2rem;
+  /* letter-spacing: 10px; */
+  white-space: pre-line;
 }
 
 @media (min-width: 40rem) {
