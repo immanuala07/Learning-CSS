@@ -29,12 +29,12 @@ All done, great job!
 
 @font-face {
   font-family: "AnonymousPro";
-  src: url("anonymousPro-Regular.ttf");
+  src: url("anonymousPro-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "AnonymousPro";
-  src: url("anonymousPro-Bold.ttf");
+  src: url("anonymousPro-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 
