@@ -94,12 +94,12 @@ main {
 .package__info {
   padding: 1rem;
   border: 1px solid #0e4f1f;
-  font-size: 1.2rem;
   color: #0e4f1f;
   background: white;
-  font-family: 'Montserrat', 'sans-serif';
-  /* font-weight: 700;text-decoration: underline wavy red; */
-  text-shadow: 2px 2px 20px rgb(221, 128, 128);
+  font:700 1.2rem "AnonymousPro" "sans-serif";
+  /*
+  font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit;
+  */
 }
 
 .clearfix {
