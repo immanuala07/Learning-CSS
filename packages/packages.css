@@ -98,8 +98,8 @@ main {
   color: #0e4f1f;
   background: white;
   font-family: 'Montserrat', 'sans-serif';
-  font-weight: 700;
-  text-decoration: underline wavy red;
+  /* font-weight: 700;text-decoration: underline wavy red; */
+  text-shadow: 2px 2px 20px rgb(221, 128, 128);
 }
 
 .clearfix {
