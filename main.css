@@ -18,14 +18,17 @@ body {
     background: white;
     padding: 10px;
     border: 5px solid black;
+    height: 1300px;
     display: flex;
     /* display: inline-flex; */
-
     flex-direction: row;
     flex-wrap: wrap;
 
     /* flex-flow is a shorthand property for setting both the flex-direction and flex-wrap. */
     /* flex-flow: row wrap; */
+
+    align-items: center;
+    justify-content: center;
 }
 
 .item-1 {
