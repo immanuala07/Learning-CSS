@@ -22,7 +22,7 @@ body {
     display: flex;
     /* display: inline-flex; */
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
     /* flex-flow is a shorthand property for setting both the flex-direction and flex-wrap. */
     /* flex-flow: row wrap; */
@@ -56,7 +56,6 @@ body {
     border: 5px solid black;
     margin: 10px;
     height: 250px;
-		align-self: flex-end;
 }
 
 .item-4 {
@@ -76,6 +75,7 @@ body {
     border: 5px solid black;
     margin: 10px;
     width: 350px;
+		flex-grow: 1;
 }
 
 .item-6 {
@@ -85,4 +85,5 @@ body {
     border: 5px solid black;
     margin: 10px;
     width: 350px;
+		flex-grow: 5;
 }
