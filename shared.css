@@ -25,14 +25,32 @@ The instructions are:
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+    display: grid;
+    grid-template-rows: 3.5rem auto 8rem;
+    height: 100%;
+
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
 }
 
 main {
-    min-height: calc(100vh - 3.5rem - 8rem);
+    /* min-height: calc(100vh - 3.5rem - 8rem); */
     margin-top: 3.5rem;
+
+    /* Mention the grid row lines for grid-row shorthand */
+    /* grid-row: 2 / 3; */
+
+    /* (or) */
+
+    grid-area: main;
 }
 
 .backdrop {
@@ -145,6 +163,13 @@ main {
     background: black;
     padding: 2rem;
     margin-top: 3rem;
+
+    /* Mention the grid row lines for grid-row shorthand */
+    /* grid-row: 3 / 4; */
+
+    /* (or) */
+
+    grid-area: footer;
 }
 
 .main-footer__links {
