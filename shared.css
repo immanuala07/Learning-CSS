@@ -33,7 +33,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     display: grid;
-    grid-template-rows: 3.5rem auto 8rem;
+    grid-template-rows: 3.5rem auto fit-content(8rem);
     height: 100%;
 
     grid-template-areas: "header"
@@ -42,9 +42,6 @@ body {
 }
 
 main {
-    /* min-height: calc(100vh - 3.5rem - 8rem); */
-    margin-top: 3.5rem;
-
     /* Mention the grid row lines for grid-row shorthand */
     /* grid-row: 2 / 3; */
 
