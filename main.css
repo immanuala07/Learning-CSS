@@ -1,30 +1,12 @@
 .container {
-    margin: 20px;
-    display: grid;
-    /* grid-template-columns: repeat(auto-fill, 10rem); */
-    grid-template-columns: repeat(3, 10rem);
-    grid-auto-rows: 20rem;
-    justify-content: center;
-    grid-gap: 1.5rem;
-    grid-auto-rows: minmax(8rem, auto);
-    grid-auto-flow: row dense;
-    grid-auto-columns: 5rem;
+    margin: 150px auto;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
 }
 
-.quote {
-  border: 1px solid #fa923f;
-  background: #ffbd87;
-  font-family: sans-serif;
-  padding: 1rem;
-  border-radius: 5px;
-}
-
-.quote:nth-of-type(2) {
-  grid-column: span 2;
-}
-
-.quote--featured {
-  border: #ff4213;
-  background: #ff9f87;
-  grid-column: span 2;
+.box {
+    background: red;
+    width: 100%;
+    height: 100%;
 }
