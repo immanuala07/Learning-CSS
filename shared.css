@@ -248,6 +248,8 @@ so add disabled attribut to the button to see the changes.
 
 .open {
     display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
 @media (min-width: 40rem) {
