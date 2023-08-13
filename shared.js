@@ -17,6 +17,10 @@ for (let i = 0; i < selectPlanButtons.length; i++) {
     // Adds open css class to the modal element
     modal.classList.add('open');
     backdrop.classList.add('open');
+
+    setTimeout(() => {
+      backdrop.classList.add('open');
+    }, 10);
   });
 }
 
@@ -29,6 +33,11 @@ function closeModal () {
   }
 
   backdrop.classList.remove('open');
+
+  setTimeout(() => {
+    backdrop.style.display = 'none';
+    // Adding the same timeout seconds as per transitions as 0.2 seconds or 200 milliseconds.
+  }, 200);
 }
 
 backdrop.addEventListener('click', function() {
@@ -48,5 +57,9 @@ toggleButton.addEventListener('click', function() {
   // backdrop.style.display = "block";
 
   mobileNav.classList.add('open');
-  backdrop.classList.add('open');
+  backdrop.style.display = 'block';
+
+  setTimeout(() => {
+    backdrop.classList.add('open');    
+  }, 10);
 });
