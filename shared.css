@@ -174,7 +174,6 @@ main {
 }
 
 .mobile-nav {
-    display: none;
     position: fixed;
     z-index: 101;
     top: 0;
@@ -182,6 +181,9 @@ main {
     background: white;
     width: 80%;
     height: 100vh;
+    /* Adding sliding mobile navigation bar */
+    transform: translateX(-100rem);
+    transition: transform 300ms ease-out;
 }
 
 .mobile-nav__items {
@@ -251,6 +253,7 @@ so add disabled attribut to the button to see the changes.
 .open {
     display: block !important;
     opacity: 1 !important;
+    /* In the mobile_nav opening the translateX is overriden to zero */
     transform: translateY(0) !important;
 }
 
