@@ -191,9 +191,9 @@ since the CSS execution is top to bottom approach.
 
 .modal {
 	position: fixed;
-    opacity: 0;
-    transform: translate(-3rem);
-    transition: opacity 200ms ease-out 1s, transform 500ms ease-out 1s;
+	opacity: 0;
+	transform: translate(-3rem);
+	transition: opacity 200ms ease-out 1s, transform 500ms ease-out 1s;
 	z-index: 200;
 	top: 20%;
 	left: 30%;
