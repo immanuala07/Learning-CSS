@@ -126,6 +126,10 @@ main {
     border-bottom: 5px solid white;
 }
 
+.main-nav__item--cta {
+    animation: wiggle 400ms 3s 8 ease-out none;
+}
+
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
     color: white;
@@ -217,7 +221,6 @@ main {
     }
 }
 
-
 .button {
     background: #0e4f1f;
     color: white;
@@ -265,5 +268,19 @@ so add disabled attribut to the button to see the changes.
     .main-footer__links {
         flex-direction: row;
         justify-content: center;
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    
+    50% {
+        transform: rotateZ(-10deg);
+    }
+    
+    100% {
+        transform: rotateZ(10deg);
     }
 }
