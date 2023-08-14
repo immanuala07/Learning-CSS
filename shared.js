@@ -16,7 +16,7 @@ for (let i = 0; i < selectPlanButtons.length; i++) {
 
     // Adds open css class to the modal element
     modal.classList.add('open');
-    backdrop.classList.add('open');
+    backdrop.style.display = "block";
 
     setTimeout(() => {
       backdrop.classList.add('open');
@@ -60,6 +60,6 @@ toggleButton.addEventListener('click', function() {
   backdrop.style.display = 'block';
 
   setTimeout(() => {
-    backdrop.classList.add('open');    
+    backdrop.classList.add('open');
   }, 10);
 });
