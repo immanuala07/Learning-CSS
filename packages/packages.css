@@ -64,6 +64,12 @@ main {
 .package:active {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border-color: #ff5454;
+  /* 
+  Add a CSS animation to the "package" boxes on the "Packages" page.
+  The animation should push the elements up gently,
+  feel free to implement any solution which yields a "push-up" effect.
+  */
+  animation: push-up 1s ease-out forwards;
 
   /* border-color: #ff5454 !important; */
 }
@@ -170,5 +176,22 @@ main {
   #free:hover,
   #free:active {
     border-right-color: #ff5454;
+  }
+}
+
+/* 
+Add a CSS animation to the "package" boxes on the "Packages" page.
+The animation should push the elements up gently,
+feel free to implement any solution which yields a "push-up" effect.
+*/
+@keyframes push-up {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-1.5rem);
+  }
+  100% {
+    transform: translateY(-1rem);
   }
 }
