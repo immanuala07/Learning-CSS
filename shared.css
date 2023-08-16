@@ -30,14 +30,31 @@ The instructions are:
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
+    padding-top: 3.5rem;
+}
+
+@supports (display: grid) {
+    body {
+        display: grid;
+        grid-template-rows: 3.5rem auto fit-content(8rem);
+        grid-template-areas: "header"
+            "main"
+            "footer";
+        padding-top: 0;
+        height: 100%;
+    }
 }
 
 main {
-    min-height: calc(100vh - 3.5rem - 8rem);
-    margin-top: 3.5rem;
+    /* grid-row: 2 / 3; */
+    grid-area: main;
 }
 
 .backdrop {
@@ -159,6 +176,8 @@ main {
     background: black;
     padding: 2rem;
     margin-top: 3rem;
+    /* grid-row: 3 / 4; */
+    grid-area: footer;
 }
 
 .main-footer__links {
@@ -194,7 +213,7 @@ main {
     width: 80%;
     height: 100vh;
     /* Adding sliding mobile navigation bar */
-    transform: translateX(-100rem);
+    transform: translateX(-100%);
     transition: transform 300ms ease-out;
 }
 
@@ -281,7 +300,7 @@ so add disabled attribut to the button to see the changes.
 
 @keyframes wiggle {
     0% {
-        transform: rotateZ(0deg);
+        transform: rotateZ(0);
     }
     
     50% {
