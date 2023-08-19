@@ -6,7 +6,22 @@ If we dont want to re-run the command then run this below command on watch mode:
 sass --watch main.scss:main.css
 */
 
-$main-color: #521751;
+// SASS Variables
+// $main-color: #521751;
+
+// SASS Maps
+$colors: (main: #521751,secondary: #fa923f);
+
+// SASS Lists
+/*
+  In Sass,
+  map-get is a built-in function that allows you to retrieve the value
+  associated with a specific key from a map.
+  Maps are collections of key-value pairs,
+  and map-get helps you access the value corresponding
+  to a given key within the map.
+*/
+$border-default: 0.05rem solid map-get($colors, main);
 
 @import "typography.css";
 html {
@@ -41,7 +56,7 @@ body {
 }
 
 .sass-introduction {
-  border: 0.05rem solid $main-color;
+  border: $border-default;
   background: #fae5ff;
   padding: 2rem;
   text-align: center;
@@ -55,7 +70,7 @@ body {
 }
 
 .sass-details {
-  border: 0.05rem solid $main-color;
+  border: $border-default;
   background: #fae5ff;
   padding: 1rem;
   text-align: center;
@@ -65,7 +80,7 @@ body {
 }
 
 .section-header {
-  border-bottom: 0.05rem solid $main-color;
+  border-bottom: $border-default;
 }
 
 .section-header h1 {
@@ -89,17 +104,41 @@ body {
 
   .documentation-link {
     text-decoration: none;
-    color: $main-color;
+    /*
+      In Sass,
+      map-get is a built-in function that allows you to retrieve the value
+      associated with a specific key from a map.
+      Maps are collections of key-value pairs,
+      and map-get helps you access the value corresponding
+      to a given key within the map.
+    */
+    color: map-get($colors, main);
     display: block;
     padding: 0.2rem;
-    border: 0.05rem solid $main-color;
+    border: $border-default;
   }
 
   .documentation-link:hover,
   .documentation-link:active {
     color: white;
-    background: #fa923f;
-    border-color: #fa923f;
+    /*
+      In Sass,
+      map-get is a built-in function that allows you to retrieve the value
+      associated with a specific key from a map.
+      Maps are collections of key-value pairs,
+      and map-get helps you access the value corresponding
+      to a given key within the map.
+    */
+    background: map-get($colors, secondary);
+    /*
+      In Sass,
+      map-get is a built-in function that allows you to retrieve the value
+      associated with a specific key from a map.
+      Maps are collections of key-value pairs,
+      and map-get helps you access the value corresponding
+      to a given key within the map.
+    */
+    border-color: map-get($colors, secondary);
   }
 }
 

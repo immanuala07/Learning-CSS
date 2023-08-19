@@ -5,6 +5,14 @@ sass main.scss main.css
 If we dont want to re-run the command then run this below command on watch mode:
 sass --watch main.scss:main.css
 */
+/*
+  In Sass,
+  map-get is a built-in function that allows you to retrieve the value
+  associated with a specific key from a map.
+  Maps are collections of key-value pairs,
+  and map-get helps you access the value corresponding
+  to a given key within the map.
+*/
 @import "typography.css";
 html {
   font-size: 94.75%;
@@ -79,6 +87,14 @@ body {
 }
 .documentation-links .documentation-link {
   text-decoration: none;
+  /*
+    In Sass,
+    map-get is a built-in function that allows you to retrieve the value
+    associated with a specific key from a map.
+    Maps are collections of key-value pairs,
+    and map-get helps you access the value corresponding
+    to a given key within the map.
+  */
   color: #521751;
   display: block;
   padding: 0.2rem;
@@ -87,7 +103,23 @@ body {
 .documentation-links .documentation-link:hover,
 .documentation-links .documentation-link:active {
   color: white;
+  /*
+    In Sass,
+    map-get is a built-in function that allows you to retrieve the value
+    associated with a specific key from a map.
+    Maps are collections of key-value pairs,
+    and map-get helps you access the value corresponding
+    to a given key within the map.
+  */
   background: #fa923f;
+  /*
+    In Sass,
+    map-get is a built-in function that allows you to retrieve the value
+    associated with a specific key from a map.
+    Maps are collections of key-value pairs,
+    and map-get helps you access the value corresponding
+    to a given key within the map.
+  */
   border-color: #fa923f;
 }
 
