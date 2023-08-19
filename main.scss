@@ -7,7 +7,10 @@ sass --watch main.scss:main.css
 */
 
 // SASS Variables
+$size-default: 1rem;
+$size-tiny: 0.2rem;
 // $main-color: #521751;
+
 
 // SASS Maps
 $colors: (main: #521751,secondary: #fa923f);
@@ -61,9 +64,11 @@ body {
   background: lighten(map-get($colors, main), 72%);
   padding: 2rem;
   text-align: center;
-  box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
   width: 90%;
-  box-sizing: border-box;
+  box: {
+    shadow: $size-tiny $size-tiny 0.1rem #ccc;
+    sizing: border-box;
+  }
 }
 
 .sass-introduction p {
@@ -74,7 +79,7 @@ body {
   border: $border-default;
   // Sass built-in function
   background: lighten(map-get($colors, main), 72%);
-  padding: 1rem;
+  padding: $size-default;
   text-align: center;
   margin: 2rem 0;
   width: 90%;
@@ -83,15 +88,15 @@ body {
 
 .section-header {
   border-bottom: $border-default;
-}
-
-.section-header h1 {
-  margin: 0 0 1rem 0;
+  
+  h1 {
+    margin: 0 0 $size-default 0;
+  }
 }
 
 .documentation-links {
   list-style: none;
-  margin: 1rem 0 0 0;
+  margin: $size-default 0 0 0;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,7 +105,7 @@ body {
   flex-direction: column;
 
   li {
-    margin: 0.2rem 0;
+    margin: $size-tiny 0;
     background: white;
   }
 
@@ -116,7 +121,7 @@ body {
     */
     color: map-get($colors, main);
     display: block;
-    padding: 0.2rem;
+    padding: $size-tiny;
     border: $border-default;
   }
 
@@ -147,10 +152,6 @@ body {
 @media (min-width: 40rem) {
   html {
     font-size: 125%;
-  }
-
-  .container {
-    padding: 3rem 0;
   }
 
   .sass-introduction,
