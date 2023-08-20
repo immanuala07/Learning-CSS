@@ -50,6 +50,11 @@ within other SCSS files and shouldn't be compiled into separate CSS files.
 html {
   font-size: 94.75%;
 }
+@media (min-width: 40rem) {
+  html {
+    font-size: 125%;
+  }
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -81,6 +86,11 @@ body {
   box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
   box-sizing: border-box;
 }
+@media (min-width: 40rem) {
+  .sass-introduction {
+    width: 30rem;
+  }
+}
 
 .sass-introduction p {
   margin: 0;
@@ -94,6 +104,11 @@ body {
   margin: 2rem 0;
   width: 90%;
   box-sizing: border-box;
+}
+@media (min-width: 40rem) {
+  .sass-details {
+    width: 30rem;
+  }
 }
 
 .section-header {
