@@ -47,6 +47,18 @@ within other SCSS files and shouldn't be compiled into separate CSS files.
   color: #521751;
 }
 
+/*
+  A mixin is one or more styles grouped together,
+  allowing us to reuse them multiple times throughout our stylesheet
+  without rewriting the code each time.
+  Mixins are typically only used for reusable styles and to modify variables.
+*/
+/*
+  A mixin is one or more styles grouped together,
+  allowing us to reuse them multiple times throughout our stylesheet
+  without rewriting the code each time.
+  Mixins are typically only used for reusable styles and to modify variables.
+*/
 html {
   font-size: 94.75%;
 }

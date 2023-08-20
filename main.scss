@@ -10,10 +10,36 @@ sass --watch main.scss:main.css
 @import "_variables.scss";
 
 @import "typography.scss";
+
+/*
+  A mixin is one or more styles grouped together,
+  allowing us to reuse them multiple times throughout our stylesheet
+  without rewriting the code each time.
+  Mixins are typically only used for reusable styles and to modify variables.
+*/
+@mixin display-flex() {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/*
+  A mixin is one or more styles grouped together,
+  allowing us to reuse them multiple times throughout our stylesheet
+  without rewriting the code each time.
+  Mixins are typically only used for reusable styles and to modify variables.
+*/
+@mixin media-min-width($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
 html {
   font-size: 94.75%;
 
-  @media (min-width: 40rem) {
+  @include media-min-width(40rem) {
     font-size: 125%;
   }
 }
@@ -24,11 +50,7 @@ body {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
+  @include display-flex();
   /*
   flex-direction: column;
   flex-wrap: nowrap;
@@ -54,7 +76,7 @@ body {
   width: 90%;
   box-sizing: border-box;
   
-  @media (min-width: 40rem) {
+  @include media-min-width(40rem) {
     width: 30rem;
   }
 }
@@ -85,10 +107,7 @@ body {
   list-style: none;
   margin: $size-default 0 0 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  @include display-flex();
   flex-direction: column;
 
   li {
