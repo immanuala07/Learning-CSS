@@ -1,0 +1,34 @@
+// ----- SASS Partials file -----
+/*
+Partials are separate SCSS files that contain chunks of CSS code,
+typically for specific sections or components of your website.
+
+Partials are named with an underscore (_) prefix in their filenames,
+such as _variables.scss, _header.scss, etc.
+
+This naming convention tells SCSS that these files are meant to be included
+within other SCSS files and shouldn't be compiled into separate CSS files.
+*/
+
+// SASS Variables
+// $main-color: #521751;
+$size-default: 1rem;
+$size-tiny: 0.2rem;
+
+
+// SASS Maps
+$colors: (
+  main: #521751,
+  secondary: #fa923f
+);
+
+// SASS Lists
+/*
+  In Sass,
+  map-get is a built-in function that allows you to retrieve the value
+  associated with a specific key from a map.
+  Maps are collections of key-value pairs,
+  and map-get helps you access the value corresponding
+  to a given key within the map.
+*/
+$border-default: calc($size-tiny / 4) solid map-get($colors, main);

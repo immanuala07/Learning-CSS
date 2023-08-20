@@ -6,6 +6,16 @@ If we dont want to re-run the command then run this below command on watch mode:
 sass --watch main.scss:main.css
 */
 /*
+Partials are separate SCSS files that contain chunks of CSS code,
+typically for specific sections or components of your website.
+
+Partials are named with an underscore (_) prefix in their filenames,
+such as _variables.scss, _header.scss, etc.
+
+This naming convention tells SCSS that these files are meant to be included
+within other SCSS files and shouldn't be compiled into separate CSS files.
+*/
+/*
   In Sass,
   map-get is a built-in function that allows you to retrieve the value
   associated with a specific key from a map.
@@ -13,7 +23,30 @@ sass --watch main.scss:main.css
   and map-get helps you access the value corresponding
   to a given key within the map.
 */
-@import "typography.css";
+/*
+Partials are separate SCSS files that contain chunks of CSS code,
+typically for specific sections or components of your website.
+
+Partials are named with an underscore (_) prefix in their filenames,
+such as _variables.scss, _header.scss, etc.
+
+This naming convention tells SCSS that these files are meant to be included
+within other SCSS files and shouldn't be compiled into separate CSS files.
+*/
+/*
+  In Sass,
+  map-get is a built-in function that allows you to retrieve the value
+  associated with a specific key from a map.
+  Maps are collections of key-value pairs,
+  and map-get helps you access the value corresponding
+  to a given key within the map.
+*/
+.char-highlight {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #521751;
+}
+
 html {
   font-size: 94.75%;
 }
