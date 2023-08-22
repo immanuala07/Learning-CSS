@@ -162,6 +162,16 @@ Navigate to below branches to understand about CSS:
 - [155-Detecting-Browser-Support-with-@supports](https://github.com/immanuala07/Learning-CSS/tree/155-Detecting-Browser-Support-with-@supports)
 - [156-SASS-Nested-Selectors](https://github.com/immanuala07/Learning-CSS/tree/156-SASS-Nested-Selectors)
 - [157-SASS-Nested-Properties](https://github.com/immanuala07/Learning-CSS/tree/157-SASS-Nested-Properties)
+- [158-SASS-Understanding-Variables](https://github.com/immanuala07/Learning-CSS/tree/158-SASS-Understanding-Variables)
+- [159-SASS-Storing-Lists-and-Maps-in-Variables](https://github.com/immanuala07/Learning-CSS/tree/159-SASS-Storing-Lists-and-Maps-in-Variables)
+- [160-SASS-Built_In-Functions](https://github.com/immanuala07/Learning-CSS/tree/160-SASS-Built_In-Functions)
+- [161-Assignment-on-SASS](https://github.com/immanuala07/Learning-CSS/tree/161-Assignment-on-SASS)
+- [162-SASS-Adding-Simple-Arithmetics](https://github.com/immanuala07/Learning-CSS/tree/162-SASS-Adding-Simple-Arithmetics)
+- [163-SASS-Adding-Better-Import-and-Partials](https://github.com/immanuala07/Learning-CSS/tree/163-SASS-Adding-Better-Import-and-Partials)
+- [164-SASS-Improving-Media-Queries](https://github.com/immanuala07/Learning-CSS/tree/164-SASS-Improving-Media-Queries)
+- [165-SASS-Understanding-Inheritance](https://github.com/immanuala07/Learning-CSS/tree/165-SASS-Understanding-Inheritance)
+- [166-SASS-Adding-Mixins](https://github.com/immanuala07/Learning-CSS/tree/166-SASS-Adding-Mixins)
+- [167-SASS-Using-the-Ampersand-Operator](https://github.com/immanuala07/Learning-CSS/tree/167-SASS-Using-the-Ampersand-Operator)
 
 </details>
 
